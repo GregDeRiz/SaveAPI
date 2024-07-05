@@ -1,0 +1,6 @@
+name: SaveAPI
+version: '${project.version}'
+main: fr.gregderiz.saveapi.SavePlugin
+api-version: '1.20'
+authors: [GregDeRiz]
+description: A plugin API to saves player's status or datas
