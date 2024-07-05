@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 import java.util.Map;
 import java.util.UUID;
 
-public final class PlayersManager {
+public final class StatsManager {
     private final Map<UUID, Stat> playerStats = Maps.newHashMap();
 
     public boolean isPlayerSaved(Player player) {
@@ -27,5 +27,10 @@ public final class PlayersManager {
 
     public void restorePlayerStats() {
         playerStats.forEach((uuid, stat) -> stat.restore(null));
+        this.playerStats.clear();
+    }
+
+    public Map<UUID, Stat> getPlayerStats() {
+        return this.playerStats;
     }
 }

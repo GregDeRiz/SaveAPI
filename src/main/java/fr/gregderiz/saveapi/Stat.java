@@ -14,9 +14,9 @@ public class Stat {
     private ItemStack[] previousArmor;
 
     private final Player player;
-    private final PlayersManager playersManager;
+    private final StatsManager playersManager;
 
-    public Stat(Player player, PlayersManager playersManager) {
+    public Stat(Player player, StatsManager playersManager) {
         this.player = player;
         this.playersManager = playersManager;
     }
