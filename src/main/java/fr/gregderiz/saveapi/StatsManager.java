@@ -26,7 +26,7 @@ public final class StatsManager {
     }
 
     public void restorePlayerStats() {
-        playerStats.forEach((uuid, stat) -> stat.restore(null));
+        playerStats.forEach((uuid, stat) -> stat.restoreAll(null));
         this.playerStats.clear();
     }
 
